@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interagindo com o usuário</title>
+</head>
+<body>
+
+  <script>
+    function interagir() {
+      var nome = prompt("Digite o seu nome:");
+      if (nome != null) {
+        alert("Olá, " + nome + "! Vamos interagir mais uma vez?");
+        var resposta = prompt("qual jogador vc gosta?, " + nome + "?");
+        if (resposta != null) {
+          alert("Legal, " + nome + "! Obrigado por compartilhar. Tenha um ótimo dia!");
+        } else {
+          alert("Por favor, responda à pergunta.");
+        }
+      } else {
+        alert("Por favor, digite o seu nome.");
+      }
+    }
+
+    interagir();
+  </script>
+
+</body>
+</html>
